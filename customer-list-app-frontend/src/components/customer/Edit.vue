@@ -69,6 +69,7 @@ export default {
           customerData
         )
         .then(data => {
+        console.log(data);
           router.push({ name: "home" });
         });
     },

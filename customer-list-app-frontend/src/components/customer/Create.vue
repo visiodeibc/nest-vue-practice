@@ -1,4 +1,3 @@
-// ./src/components/customer/Create.vue
 
 <template>
    <div>
@@ -64,8 +63,10 @@ export default {
       this.__submitToServer(customerData);
     },
     __submitToServer(data) {
+         console.log(data);
       axios.post(`${server.baseURL}/customer/create`, data).then(data => {
         router.push({ name: "home" });
+         console.log(data);
       });
     }
   }
